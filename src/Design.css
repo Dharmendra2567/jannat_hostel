@@ -1,0 +1,131 @@
+.slant-line {
+    position: absolute;
+    top: 0;
+    left: 376px;
+    width: 0;
+    height: 0;
+    border-top: 64px solid rgb(155, 218, 245);
+    border-left: 70px solid rgb(255, 255, 255);
+    /* z-index: 0; */
+  }
+  .btop{
+    /* position: relative; */
+    border-top: 5px solid rgb(155, 218, 245);
+  }
+  .custom-bg{
+    background-image: radial-gradient( circle farthest-corner at 46% 87.5%, rgba(177,232,248,1) 13.3%, rgba(49,75,125,1) 89.7% );
+
+  }
+  .customFont{
+    text-decoration: none;
+    color: black;
+    font-family: Agency;
+    font-size: 18px;
+  }
+  .carousel-item{
+    height:20rem;
+  }
+  .c-img{
+    height:100%;
+    /* object-fit: cover; */
+  }
+  @media (max-width: 767px) {
+    .slant-line {
+      display: none;
+    }
+  }
+  .button-border{
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid info;
+  }
+  .nav-link{
+    font-family: bold;
+    font-size: 21px;
+  }
+  .card {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+.bi-check{
+
+  margin-right: 20px;
+  font-family: bold;
+  font-style: bold;
+  font-size: 25px;
+}  
+
+@media only screen and (max-width: 768px) {
+  .large-screen-image {
+    display: none;
+  }
+  .small-screen-image {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .large-screen-image {
+    display: block;
+  }
+  .small-screen-image {
+    display: none;
+  }
+}
+@media only screen and (min-width:769px) and (max-width:849px){
+  .size{
+    width:350px;
+  }
+}
+@media only screen and (min-width:850px) and (max-width:965px){
+  .size{
+    width:400px;
+  }
+}
+@media only screen and (min-width:966px) and (max-width:1077px){
+  .size{
+    width:450px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .md-screen {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .md-screen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lg-screen {
+    display: none;
+  }
+}
+.ddrk {
+  transition: background-color 1.3s ease; /* Transition effect for background color */
+}
+
+.ddrk:hover {
+  background-color: #2bc7df;
+  border:hidden;
+}
+.custom-btn{
+  height: 80px;
+  font-size: 30px;
+  border: none;
+  background-color: orange;
+}
+.custom-dark-bg {
+  background-color: #111111;
+  background-image: linear-gradient(to bottom right, #111111, #000000);
+}
+.custom-orange-bg{
+  background-color: #ff7f00;
+  /* background-image: linear-gradient(to bottom right, #f7a308f7, #f7a408); */
+}
+.custom-font{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+}
