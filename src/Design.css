@@ -1,7 +1,7 @@
 .slant-line {
     position: absolute;
     top: 0;
-    left: 376px;
+    left: 380px;
     width: 0;
     height: 0;
     border-top: 64px solid rgb(155, 218, 245);
@@ -36,7 +36,8 @@
   }
   .button-border{
     border-radius: 50px 50px 50px 50px;
-    border: 2px solid info;
+    border: 1px solid info;
+    height: 45px;
   }
   .nav-link{
     font-family: bold;
@@ -129,3 +130,14 @@
   font-size: 16px;
   font-weight: 700;
 }
+
+/* in faqs page*/
+.custom-color{
+  background-color: #f8cae1;
+}
+.custom-color.btn:focus,
+.custom-color.btn:active,
+.custom-color.btn:hover {
+  background-color: #f8aed3
+}
+

@@ -17,7 +17,7 @@ const Sports = () => {
             <p className='py-4 px-4 fs-4'>The main objective is to encourage skill development, and promote the values of integrity, among the students. </p>
           </div>
           <div className='col-md-4 '>
-            <img src='images/sport1.jpg' className='me-lg-0 ms-lg-auto d-lg-block img-fluid mx-auto d-block' style={{ height: '250px', width: '250px' }}></img>
+            <img src='images/sport1.jpg' className='me-lg-0 img-fluid mx-auto d-block' style={{ height: '250px', width: '250px' }}></img>
           </div>
           <div className='col-md-4'>
             <img src='images/sport2.jpg' className='w-100' style={{ height: '410px' }}></img>

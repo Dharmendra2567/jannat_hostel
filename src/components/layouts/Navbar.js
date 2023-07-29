@@ -41,14 +41,17 @@ const Navbar = () => {
                   <li className='nav-item'>
                     <Link className='nav-link' to={"/scholarships"}>Scholarships</Link>
                   </li>
+                  <li className='nav-item'>
+                    <Link className='nav-link' to={"/faqs"}>FAQs</Link>
+                  </li>
                 </ul>
               </div>
             </nav>
           </div>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-4 d-flex justify-content-end align-items-center'>
             <button className='btn btn-info button-border'> <Link className='customFont'>Logout<i className="bi bi-box-arrow-right text-dark"></i></Link></button>
-            <button className='btn btn-info ms-2 button-border'><Link className='customFont'>Login<i className="bi bi-box-arrow-left text-dark customFont"></i></Link></button>
+            <button className='btn btn-info ms-2 button-border'><Link to='/login' className='customFont'>Login<i className="bi bi-box-arrow-left text-dark customFont"></i></Link></button>
             </div>
       </div>
     </>

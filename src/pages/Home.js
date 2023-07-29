@@ -138,7 +138,7 @@ const Home = () => {
         <div className=' row mt-5 me-3 ms-3 bg-info text-center'>
           <div>
             <h1 className='mt-5' style={{ fontSize: '60px', marginTop: '0px' }}><b>Join Our Home!</b></h1>
-            <button className='btn btn-dark mt-2 mb-5 ddrk' >SIGN UP FOR FREE NEWSLETTER</button>
+            <button className='btn btn-dark mt-2 mb-5 ddrk' ><Link className='text-white text-decoration-none' to={'/register'} >SIGN UP FOR FREE NEWSLETTERS</Link> </button>
           </div>
         </div>
         {/* end of join our home */}
