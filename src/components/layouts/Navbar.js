@@ -1,8 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../../Design.css'
+import { SignOut, isAuthenticate } from '../../api/userApi'
 
 const Navbar = () => {
+  let {user} = isAuthenticate()
+  const navigate = useNavigate()
+
+  const handleSignout=()=>{
+    
+    SignOut()
+    .then(data=>{
+      if(data.error){
+        console.log(data.error)
+      }
+      else if(data.success){
+        navigate('/login')
+      }
+    })
+  }
+
   return (
     <>
       <div className='row mt-0 text-center position-relative custom-bg fixed-top'>
@@ -50,8 +67,21 @@ const Navbar = () => {
           </div>
         </div>
         <div className='col-md-4 d-flex justify-content-end align-items-center'>
-            <button className='btn btn-info button-border'> <Link className='customFont'>Logout<i className="bi bi-box-arrow-right text-dark"></i></Link></button>
-            <button className='btn btn-info ms-2 button-border'><Link to='/login' className='customFont'>Login<i className="bi bi-box-arrow-left text-dark customFont"></i></Link></button>
+          {!user &&
+          <>
+          <button className='btn btn-info button-border'> <Link to='/register' className='customFont'>Register<i className="bi bi-box-arrow-right text-dark"></i></Link></button>
+          <button className='btn btn-info ms-2 button-border'><Link to='/login' className='customFont'>Login<i className="bi bi-box-arrow-left text-dark customFont"></i></Link></button>
+          </>
+          }
+          {user && user.role ===1 &&
+           <button className='btn btn-info button-border me-2 '> <Link to='/admin/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
+          }
+          {user && user.role ===0 &&
+           <button className='btn btn-info button-border me-2'> <Link to='/user/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
+          }
+          {user &&
+            <button className='btn btn-info button-border' onClick={handleSignout}> <Link className='customFont'>Logout<i className="bi bi-box-arrow-right text-dark"></i></Link></button>
+          }
             </div>
       </div>
     </>

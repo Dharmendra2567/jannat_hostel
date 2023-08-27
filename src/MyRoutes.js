@@ -9,6 +9,10 @@ import AboutUs from './pages/AboutUs'
 import FAQs from './pages/FAQs'
 import Register from './pages/Register'
 import Login from './pages/Login'
+import EmailConfirmation from './pages/EmailConfirmation'
+import ForgetPassword from './pages/ForgetPassword'
+import ResetPassword from './pages/ResetPassword'
+import UserDashboard from './pages/UserDashboard'
 
 const MyRoutes = () => {
   return (
@@ -24,6 +28,11 @@ const MyRoutes = () => {
             <Route path='faqs' element={<FAQs/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/confirm/:token' element={<EmailConfirmation/>}/>
+            <Route path='/forgetpassword' element={<ForgetPassword/>}/>
+            <Route path='/resetpassword/:token' element={<ResetPassword/>}/>
+
+            <Route path='user/dashboard' element={<UserDashboard/>}/>
         </Routes>
         </BrowserRouter>
     </>
