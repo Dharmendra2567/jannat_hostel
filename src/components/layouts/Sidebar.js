@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <nav className="navbar-dark bg-dark text-white position-fixed top-0 end-0 h-100 p-3" style={{ width: '250px', zIndex: 1000 }}>
-      <div className=" d-lg-block">
+    <nav className="navbar-dark  bg-dark w-sm-50  text-white  position-fixed  h-100 p-3" style={{ width: '250px' }}>
+     
         {/* Display sidebar content on large screens */}
-        <div className="text-center mb-4">
-          {/* Your logo here */}
-          User Dashboard
-        </div>
-        <ul className="nav flex-column">
+        <div className="text-center navbar-brand mb-4"> User Dashboard </div>
+        <div className='collapse navbar-collapse' id='sidebarCollapse'>
+        <ul className="navbar-nav ">
           <li className="nav-item">
             <Link to="/dashboard" className="nav-link text-white">
               Dashboard
