@@ -10,7 +10,7 @@ export const register = (user) => {
         body: JSON.stringify(user)
     })
         .then(response => {
-            return response.json()
+            return response.json();
         })
         .catch(err => {
             return console.log(err)
@@ -103,4 +103,11 @@ export const resetpassword=({token,password})=>{
     .catch(err => {
         return console.log(err)
     })
+}
+
+//get all users
+export const getAllUsers=()=>{
+    return fetch(`${API}/users`)
+    .then(res=>res.json())
+    .catch(err=>console.log(err))
 }

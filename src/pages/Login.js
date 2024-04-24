@@ -29,7 +29,7 @@ const Login = () => {
     }
     const showError= ()=>{
         if(error){
-         return <div className="alert alert-danger">{error}</div>
+         return <div className="alert alert-danger mt-5 pt-5">{error}</div>
         }
      }
      const redirect =()=>{
@@ -39,7 +39,7 @@ const Login = () => {
 
             }
             {user_info && user_info.user.role===0 &&
-            navigate('/')
+            navigate('/user/dashboard')
         }
              
          } 

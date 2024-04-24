@@ -23,13 +23,13 @@ const ForgetPassword = () => {
     }
     const showError = () => {
         if (error) {
-            return <div className='alert alert-danger'>{error}</div>
+            return <div className='alert alert-danger mt-5 pt-5'>{error}</div>
         }
     }
 
     const showSuccess = () => {
         if (success) {
-            return <div className='alert alert-success'>{success}</div>
+            return <div className='alert alert-success mt-5 pt-5'>{success}</div>
         }
     }
   return (

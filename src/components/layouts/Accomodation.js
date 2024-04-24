@@ -3,11 +3,11 @@ import React from 'react'
 const Accomodation = () => {
     return (
         <>
-        <div>
+       
             <h3 className='text-center' style={{ marginTop: '50px' }}>JANNAT PROMISES TO YOU AT OUR ACCOMODATION</h3>
-            <div className='card-group '>
+            <div className='card-group row  justify-content-center flex-wrap'>
                 <div className='card shadow-lg ms-lg-5'>
-                    <div className='card-body d-flex flex-column'>
+                    <div className='card-body d-flex flex-column' style={{fontFamily:'Robust'}}>
                         <h3 className='card-title text-center text-warning'>SECURITY</h3>
                         <div className="d-flex align-items-start">
                             <i className="bi bi-check text-warning mt-1 me-3"></i>
@@ -135,7 +135,6 @@ const Accomodation = () => {
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </>
     )

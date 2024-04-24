@@ -44,10 +44,10 @@ const EmailConfirmation = () => {
                 <Navbar />
                 <div className='card'>
                     {success && (
-                        <div className='alert alert-success'>{success} <Link to="/login">Login</Link>.</div>
+                        <div className='alert alert-success mt-5 pt-5'>{success} <Link to="/login">Login</Link>.</div>
                     )}
                     {error && !success && (
-                        <div className='alert alert-danger'>{error}</div>
+                        <div className='alert alert-danger mt-5 pt-5'>{error}</div>
                     )}
                 </div>
                 {/* <Footer /> */}

@@ -7,10 +7,10 @@ const Sports = () => {
     <>
       <div className='container-fluid'>
         <Navbar />
-        <div className='row'>
+        <div className='row mt-lg-3'>
           <div className='text-center' >
-            <h1 className='mt-lg-5 py-2 ' style={{ fontFamily: 'Lato' }}><b>Jannat Sports Facility</b></h1>
-            <p className='mt-4 fs-4 px-5'>Daily Physical exercise is essential for students because exercise not only helps students to stay healthy, but it also helps to improve their emotional fitness. In order to be mentally and physically fit, Deo Niwas provides Play Ground outdoor for sporting activities such as Cricket, Volleyball and Badminton that help residents stay as fit and to develop a spirit of sportsmanship. In order to encourage the students in sports activities the Deo Management conducts tournament in sports every year with winning prizes.</p>
+            <h1 className='mt-5 py-2 ' style={{ fontFamily: 'Lato' }}><b>Jannat Sports Facility</b></h1>
+            <p className='mt-4 fs-4 px-2 px-lg-5 text-justify'>Daily Physical exercise is essential for students because exercise not only helps students to stay healthy, but it also helps to improve their emotional fitness. In order to be mentally and physically fit, Deo Niwas provides Play Ground outdoor for sporting activities such as Cricket, Volleyball and Badminton that help residents stay as fit and to develop a spirit of sportsmanship. In order to encourage the students in sports activities the Deo Management conducts tournament in sports every year with winning prizes.</p>
 
             <p className='py-4 px-4 ' style={{ fontSize: '26px' }}><b>DCL (Deo Cricket League) is a platform is a platform sponsored by Deo Niwas Home for the residents to exhibit their sporting talents as well as team work.</b></p>
 

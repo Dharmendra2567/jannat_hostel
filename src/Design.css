@@ -1,10 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.jannat-edit{
+  font-size: 35px;
+  font-weight: 600;
+  
+}
+@media  only screen and (max-width:490px) {
+  .jannat-edit{
+    font-size: 24px;
+   
+  }
+}
 .slant-line {
+  display: block;
     position: absolute;
-    top: 0;
-    left: 380px;
+    top: 0px;
+    /* left: 434px; */
     width: 0;
     height: 0;
-    border-top: 64px solid rgb(155, 218, 245);
+     border-top: 75px solid rgb(155, 218, 245);
+  
+     
+    /* border-top: 64px solid rgb(177, 21, 50); */
     border-left: 70px solid rgb(255, 255, 255);
     /* z-index: 0; */
   }
@@ -22,22 +42,47 @@
     font-family: Agency;
     font-size: 18px;
   }
+
   .carousel-item{
     height:20rem;
   }
-  .c-img{
-    height:100%;
-    /* object-fit: cover; */
-  }
-  @media (max-width: 767px) {
+  @media only screen and (max-width:1023px) {
     .slant-line {
       display: none;
     }
   }
+  @media only screen and (min-width:1024px) {
+    .slant-line {
+      display: flex;
+    }
+  }
+  @media only screen and (min-width:1024px) and (max-width: 1205px){
+    .slant-line{
+      left: 335px;
+    }
+  }
+  
+  @media only screen and (min-width:1206px) and (max-width: 1387px){
+    .slant-line{
+      left: 400px;
+    }
+  }
+   @media only screen and (min-width:1388px) and (max-width: 1582px){
+    .slant-line{
+      left: 464px;
+    }
+  } 
+  
+  @media only screen and (min-width:1583px){
+    .slant-line{
+      left: 500px;
+    }
+  } 
   .button-border{
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 20%;
     border: 1px solid info;
     height: 45px;
+    white-space: nowrap; 
   }
   .nav-link{
     font-family: bold;
@@ -141,3 +186,96 @@
   background-color: #f8aed3
 }
 
+
+
+/*sidebar css style*/
+
+.navbar-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar-icon::before {
+  content: '\2630';
+  font-size: 20px;
+  background-color: grey;
+  border-radius: 35%;
+  padding: 3px;
+  margin-right: 8px;
+  color: black;
+} 
+@media only screen and (min-width:992px) {
+  .navbar-icon{
+    display:none;
+  }
+  
+}
+
+.side-bar {
+
+  position: fixed;
+  /* display: block; */
+  width: 40%;
+  /* height: 100%; */
+  background-color:#000000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+
+}
+
+.close-btn::before {
+  content: '\2716';
+  font-size: 24px;
+  font-weight: lighter;
+  color: white;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+.close-btn {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(11, 10, 10, 0.896);
+  border: none;
+  padding: 5px;
+}
+
+.list-in-side {
+  display: block;
+  top: 4%;
+  text-align: start;
+  padding-top:3rem ;
+  list-style: none;
+  z-index: 1001;
+}
+
+.list-in-side ul {
+  list-style: none;
+
+}
+
+.list-in-side li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.list-in-side ul li:hover {
+  transform: scale(1.03);
+  transition: all 1s;
+}
+
+.list-in-side ul li {
+  padding: 8px;
+}
+
+
+.card-group-container {
+  display: flex;
+  justify-content: center;
+}

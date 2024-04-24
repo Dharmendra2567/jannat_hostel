@@ -31,12 +31,12 @@ const Register = () => {
 
     const showError= ()=>{
         if(error){
-         return <div className="alert alert-danger">{error}</div>
+         return <div className="alert alert-danger mt-5 pt-5">{error}</div>
         }
      }
      const showSuccess =()=>{
          if(success){
-             return <div className='alert alert-success'>Registration successful. Check your email for verification</div>
+             return <div className='alert alert-success mt-5 pt-5'>Registration successful. Check your email for verification</div>
          }
      }
     return (
