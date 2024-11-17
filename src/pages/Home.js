@@ -44,9 +44,9 @@ const Home = () => {
             <div className=' card position-absolute' style={{ width: '1100px', height: '', marginLeft: '100px', marginTop: '170px' }}>
               <div className='card-body' style={{ marginLeft: '530px' }}>
                 <h4 className='cart-title text-warning mt-2'>ABOUT</h4>
-                <h3 className='card-text mt-5'>Residents always say JANNAT Niwas Home is a one man, a billion
-                  dreams, that is Founder of JANNAT Niwas Home at the age of 24 years, Mr. Ranjit
-                  JANNAT. He is committed to his promise that is called JANNAT Promise.</h3>
+                <h3 className='card-text mt-5'>Residents always say SATYA Niwas Home is a one man, a billion
+                  dreams, that is Founder of SATYA Niwas Home at the age of 24 years, Mr. Ranjit
+                  SATYA. He is committed to his promise that is called SATYA Promise.</h3>
                 <p className='card-text mt-4 fs-5'>Consistently delivering what he promised for the last
                   13 years has made a big difference for many of our Deo Niwas residents. He is committed
                   to providing a secure and safe living place for residents with the name tag “ Live With Di
@@ -64,9 +64,9 @@ const Home = () => {
               <div className=' card' style={{ width: '500', height: '', marginLeft: '20px', marginTop: '170px' }}>
                 <div className='card-body' style={{ marginLeft: '300px' }}>
                   <h4 className='cart-title text-warning mt-2'>ABOUT</h4>
-                  <h3 className='card-text mt-5'>Residents always say JANNAT Niwas Home is a one man, a billion
-                    dreams, that is Founder of JANNAT Niwas Home at the age of 24 years, Mr. Ranjit
-                    JANNAT. He is committed to his promise that is called JANNAT Promise.</h3>
+                  <h3 className='card-text mt-5'>Residents always say SATYA Niwas Home is a one man, a billion
+                    dreams, that is Founder of SATYA Niwas Home at the age of 24 years, Mr. Ranjit
+                    SATYA. He is committed to his promise that is called SATYA Promise.</h3>
                   <p className='card-text mt-4 fs-5'>Consistently delivering what he promised for the last
                     13 years has made a big difference for many of our Deo Niwas residents. He is committed
                     to providing a secure and safe living place for residents with the name tag “ Live With Di
@@ -158,7 +158,7 @@ const Home = () => {
             </div>
             <div className='mb-5 '>
               <div className=' mt-5 me-lg-3 ms-lg-3 d-sm-block d-lg-flex justify-content-lg-around'>
-                <button className={`btn btn-light custom-btn ddrk  w-100 ${activeCard === 0 || activeCard === null ? 'active' : ''}`} onClick={() => handleButtonClick(0)}>Jannat Sports Faculty</button>
+                <button className={`btn btn-light custom-btn ddrk  w-100 ${activeCard === 0 || activeCard === null ? 'active' : ''}`} onClick={() => handleButtonClick(0)}>SATYA Sports Faculty</button>
                 <button className={`ms-lg-3 btn btn-light custom-btn ddrk w-100 ${activeCard === 1 ? 'active' : ''}`} onClick={() => handleButtonClick(1)}>
                   Scholarship
                 </button>

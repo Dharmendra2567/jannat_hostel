@@ -13,7 +13,6 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
-
   let { user } = isAuthenticate()
   const navigate = useNavigate()
 
@@ -32,9 +31,7 @@ const Navbar = () => {
   return (
     <>
       <div className='row mt-0 text-center custom-bg fixed-top'>
-
-
-        <div className='col-4 bg-light btop d-flex align-items-center justify-content-evenly'>
+        <div className='col-4 bg-light btop d-flex align-items-center justify-content-center'>
           {/* <nav className="navbar  navbar-expand-lg">
         <button
                 className="navbar-toggler"
@@ -80,9 +77,12 @@ const Navbar = () => {
             </div>
           )}
           <div className='slant-line '></div>
-          <p className=' jannat-edit' style={{ fontFamily: 'Robust' }}>JANNAT</p><br></br>
-         
+          <div className='d-flex justify-content-end align-items-center flex-wrap navHeader'>
+          <p className=' jannat-edit'>SATYA<br></br></p>
+          <p className=' pg-font mt-2'> <sub>&nbsp; pg</sub></p>
+          </div>
         </div>
+
         <div className=' col-4 '>
           <div className="container-fluid">
             <nav className="navbar  navbar-expand-lg">
@@ -119,22 +119,21 @@ const Navbar = () => {
             </nav>
           </div>
         </div>
-        <div className='col-4 d-flex justify-content-end align-items-center align-items-sm-center px-5'>
+        <div className='col-4 d-flex justify-content-end align-items-center align-items-sm-center px-4'>
           {!user &&
             <>
-              {/* <button className='btn btn-info button-border ms-md-2 '> <Link to='/register' className='customFont'>Register<i className="bi bi-box-arrow-right text-dark"></i></Link></button> */}
               <button className='btn btn-info  button-border ms-2'><Link to='/login' className='customFont'>Login<i className="bi bi-box-arrow-left text-dark customFont"></i></Link></button>
             </>
           }
           {user && user.role === 1 &&
-            <button className='btn btn-info button-border me-2 '> <Link to='/admin/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
+            <button className='btn btn-info button-border  '> <Link to='/admin/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
           }
           {user && user.role === 0 &&
-            <button className='btn btn-info button-border me-2'> <Link to='/user/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
+            <button className='btn btn-info button-border '> <Link to='/user/dashboard' className='customFont'>{user.firstname}<i className="bi bi-person-fill text-dark"></i></Link></button>
           }
-          {user &&
+          {/* {user &&
             <button className='btn btn-info button-border' onClick={handleSignout}> <Link className='customFont'>Logout<i className="bi bi-box-arrow-right text-dark"></i></Link></button>
-          }
+          } */}
         </div>
       </div>
     </>

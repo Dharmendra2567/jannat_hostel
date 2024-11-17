@@ -45,14 +45,14 @@ const Register = () => {
                 <Navbar/>
                 {showError()}
                 {showSuccess()}
-                <div className='d-flex flex-column justify-content center align-items-center py-5'>
-                    <div className='col col-md-8'>
-                        <div className='card shadow-lg'>
+                <div className='d-flex flex-column justify-content-center align-items-center py-5'>
+                    {/* <div className=' d-flex justify-content-center align-items-center  '> */}
+                        <div className='card shadow-lg px-lg-5'>
                             <div className='card-body w-100'>
-                                <div className='d-flex flex-column justify-content center align-items-center py-3'>
+                                <div className='d-flex flex-column justify-content-center align-items-center py-3'>
                                     <span><i className='bi bi-person-circle  ' style={{ fontSize: '50px' }}></i></span>
                                 </div>
-                                <div className='input-group mb-3'>
+                                <div className='input-group mb-3 '>
                                     <span className='input-group-text'>F</span>
                                     <div className='form-floating me-2 shadow-lg'>
                                         <input type='text' className='form-control' id='First Name' placeholder='Enter your first name' onChange={e=>{
@@ -111,7 +111,7 @@ const Register = () => {
                                         </div>
                                        </div>
                                     </div> 
-                                    </div> */}*/
+                                    </div> */}
                                     <div className='input-group'>
                                     <span className='input-group-text '><i className='bi bi-key' /></span>
                                     <div className='form-floating shadow-lg'>
@@ -128,7 +128,7 @@ const Register = () => {
                     </div>
                 </div>
                 <Footer/>
-            </div>
+            {/* </div> */}
         </>
     )
 }
